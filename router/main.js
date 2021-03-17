@@ -15,20 +15,17 @@ module.exports = function(app) {
      
     app.get('/blog',function(req,res){
       res.render('blog.html');
-   });
+  });
 
-   app.get('/contact',function(req,res){
+  app.get('/contact',function(req,res){
    res.render('contact.html');
-   });
+});
 
-   app.get('/index',function(req,res){
-      res.render('index.html');
-      });
+app.get('/recipe',function(req,res){
+   res.render('recipe.html');
+});
 
-      app.get('/recipe',function(req,res){
-         res.render('recipe.html');
-         });
-      
+
     app.get('/listall', function (req, res) {
       //res.render('about.html');
       console.log('listall...');
